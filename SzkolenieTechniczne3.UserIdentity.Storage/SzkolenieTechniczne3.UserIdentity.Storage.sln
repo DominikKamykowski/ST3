@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolenieTechniczne3.UserIdentity.Storage", "SzkolenieTechniczne3.UserIdentity.Storage.csproj", "{B20983C8-A0C4-46FC-A1A1-AE29CFD4772C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzkolenieTechniczne3.UserIdentity.Storage", "SzkolenieTechniczne3.UserIdentity.Storage.csproj", "{B20983C8-A0C4-46FC-A1A1-AE29CFD4772C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolenieTechniczne3.Common.Storage", "..\SzkolenieTechniczne3.Common.Storage\SzkolenieTechniczne3.Common.Storage.csproj", "{715073A8-615B-4A32-80DD-3CEC3A1ADBA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzkolenieTechniczne3.Common.Storage", "..\SzkolenieTechniczne3.Common.Storage\SzkolenieTechniczne3.Common.Storage.csproj", "{715073A8-615B-4A32-80DD-3CEC3A1ADBA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolenieTechniczne3.Common.CrossCutting", "..\SzkolenieTechniczne3.Common.CrossCutting\SzkolenieTechniczne3.Common.CrossCutting.csproj", "{5F49C4D4-DD3F-47B2-BC2F-8960B7235863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzkolenieTechniczne3.Common.CrossCutting", "..\SzkolenieTechniczne3.Common.CrossCutting\SzkolenieTechniczne3.Common.CrossCutting.csproj", "{5F49C4D4-DD3F-47B2-BC2F-8960B7235863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolenieTechniczne3.UserIndentity", "..\SzkolenieTechniczne3.UserIndentity\SzkolenieTechniczne3.UserIndentity.csproj", "{7194EA9F-1B84-434B-8BFD-377DBE016794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzkolenieTechniczne3.UserIndentity", "..\SzkolenieTechniczne3.UserIndentity\SzkolenieTechniczne3.UserIndentity.csproj", "{7194EA9F-1B84-434B-8BFD-377DBE016794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolenieTechniczne3.UserIdentity.CrossCutting", "..\SzkolenieTechniczne3.UserIdentity.CrossCutting\SzkolenieTechniczne3.UserIdentity.CrossCutting.csproj", "{30FDBEE6-C9D3-41EF-ADC7-70E5C72D6FD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7194EA9F-1B84-434B-8BFD-377DBE016794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7194EA9F-1B84-434B-8BFD-377DBE016794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7194EA9F-1B84-434B-8BFD-377DBE016794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FDBEE6-C9D3-41EF-ADC7-70E5C72D6FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FDBEE6-C9D3-41EF-ADC7-70E5C72D6FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FDBEE6-C9D3-41EF-ADC7-70E5C72D6FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FDBEE6-C9D3-41EF-ADC7-70E5C72D6FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

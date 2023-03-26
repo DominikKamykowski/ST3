@@ -13,18 +13,15 @@ namespace SzkolenieTechniczne3.UserIdentity.Storage.Entities
     [Table("Users", Schema = "Identity")]
 
 
-    class Role
+    public class Role
     {
         [MinLength(2)]
         [MaxLength(64)]
         [Required]
         public string Name { get; set; } = null!;
 
-        [MinLength(2)]
-        [MaxLength(64)]
-        [Required]
+         [MaxLength(300)]
         public string Description { get; set; } = null!;
-
         public ICollection<User> Users { get; set; } = new HashSet<User>();
     }
 }

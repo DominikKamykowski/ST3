@@ -12,7 +12,7 @@ namespace SzkolenieTechniczne3.UserIdentity.Storage.Entities
     [Table("Users", Schema = "Identity")]
     [Index(nameof(Email), IsUnique =false)]
 
-    class User
+    public class User
     {
         [MinLength(2)]
         [MaxLength(128)]

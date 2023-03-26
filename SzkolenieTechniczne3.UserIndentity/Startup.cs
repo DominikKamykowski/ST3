@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SzkolenieTechniczne3.Common.Storage.Extensions;
+using SzkolenieTechniczne3.UserIdentity.Storage;
 
 namespace SzkolenieTechniczne3.UserIndentity
 {
@@ -28,6 +30,7 @@ namespace SzkolenieTechniczne3.UserIndentity
         {
 
             services.AddControllers();
+            services.AddPlatformDbContext<UserIdentityDbContext>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SzkolenieTechniczne3.UserIndentity", Version = "v1" });

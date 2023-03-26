@@ -6,13 +6,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SzkolenieTechniczne3.Common.Storage.Entities;
 
 namespace SzkolenieTechniczne3.UserIdentity.Storage.Entities
 {
     [Table("Users", Schema = "Identity")]
     [Index(nameof(Email), IsUnique =false)]
 
-    public class User
+    public class User :BaseEntity
     {
         [MinLength(2)]
         [MaxLength(128)]

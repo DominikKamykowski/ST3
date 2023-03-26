@@ -1,0 +1,12 @@
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.deps.json
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.dll
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\bin\Debug\net5.0\ref\SzkolenieTechniczne3.Common.CrossCutting.dll
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.pdb
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.csproj.AssemblyReference.cache
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.AssemblyInfoInputs.cache
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.AssemblyInfo.cs
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.csproj.CoreCompileInputs.cache
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.dll
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\ref\SzkolenieTechniczne3.Common.CrossCutting.dll
+G:\Projekty Visual\SzkolenieTechniczne3.Common.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.pdb

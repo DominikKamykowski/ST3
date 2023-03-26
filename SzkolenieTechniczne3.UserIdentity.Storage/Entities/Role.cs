@@ -6,14 +6,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SzkolenieTechniczne3.Common.Storage.Entities;
 
 namespace SzkolenieTechniczne3.UserIdentity.Storage.Entities
 {
     [Index(nameof(Name), IsUnique = true)]
-    [Table("Users", Schema = "Identity")]
+    [Table("Roles", Schema = "Identity")]
 
 
-    public class Role
+    public class Role : BaseEntity
     {
         [MinLength(2)]
         [MaxLength(64)]

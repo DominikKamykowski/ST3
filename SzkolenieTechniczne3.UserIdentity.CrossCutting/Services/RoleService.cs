@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SzkolenieTechniczne3.Common.CrossCutting.Exceptions;
 using SzkolenieTechniczne3.Common.Storage.Interfaces;
 using SzkolenieTechniczne3.UserIdentity.CrossCutting.dtos;
 using SzkolenieTechniczne3.UserIdentity.CrossCutting.Mappings;
@@ -106,12 +107,23 @@ namespace SzkolenieTechniczne3.UserIdentity.CrossCutting.Services
 
         }
 
-        public Task<RoleDto> Update(RoleDto dto)
+        public async Task<RoleDto> Update(RoleDto dto)
         {
-            throw new NotImplementedException();
+            var dtoId = _dtoToEntityMapping.Map(dto).Id;
+
+            if (!await _dbContext.Set<Role>().AnyAsync(e => e.Id!.Equals(dtoId)))
+            {
+                throw new ApiHttpException(StatusCodes.Status404NotFound);
+            }
+
+            var entity = _dtoToEntityMapping.Map(dto);
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+            dto = _entityToDtoMapping.Map(entity);
+            return dto;
         }
 
-        
+
 
 
     }

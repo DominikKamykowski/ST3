@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,9 +64,20 @@ namespace SzkolenieTechniczne3.UserIdentity.CrossCutting.Services
             return entities;
         }
         
-        public Task<RoleDto> ReadById(Guid id)
+        public async Task<RoleDto> ReadById(Guid id)
         {
-            throw new NotImplementedException();
+            var entity = await _dbContext
+                .Set<Role>()
+                .AsNoTracking()
+                .Where(e => e.Id!.Equals(id))
+                .Select(_entityToDtoMapping.GetMapping())
+                .SingleOrDefaultAsync();
+
+            if(entity == null)
+            {
+                throw new Common.CrossCutting.Exceptions.ApiHttpException(StatusCodes.Status404NotFound);
+            }
+            return entity;
         }
         public async Task Delete(Guid id)
         {

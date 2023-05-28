@@ -42,25 +42,39 @@ namespace SzkolenieTechniczne3.UserIdentity.CrossCutting.Services
             await _dbContext.SaveChangesAsync();
         }
 
-        public Task<RoleDto> Create(RoleDto dto)
+        public async Task<RoleDto> Create(RoleDto dto)
         {
-            throw new NotImplementedException();
+            var entity = _dtoToEntityMapping.Map(dto);
+            _dbContext.Set<Role>().Add(entity);
+
+            await _dbContext.SaveChangesAsync();
+            dto = _entityToDtoMapping.Map(entity);
+            return dto;
+
         }
 
-        public Task Delete(Guid id)
+        public async Task<IEnumerable<RoleDto>> Read()
         {
-            throw new NotImplementedException();
+            var entities = await _dbContext
+                .Set<Role>()
+                .AsNoTracking()
+                .Select(_entityToDtoMapping.GetMapping())
+                .ToListAsync();
+            return entities;
         }
-
-        public Task<IEnumerable<RoleDto>> Read()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public Task<RoleDto> ReadById(Guid id)
         {
             throw new NotImplementedException();
         }
+        public async Task Delete(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        
+
+        
 
         public Task<RoleDto> Update(RoleDto dto)
         {

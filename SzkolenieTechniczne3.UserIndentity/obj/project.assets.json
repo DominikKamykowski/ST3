@@ -1728,6 +1728,20 @@
           "bin/placeholder/SzkolenieTechniczne3.Common.Storage.dll": {}
         }
       },
+      "SzkolenieTechniczne3.UserIdentity.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SzkolenieTechniczne3.Common.CrossCutting": "1.0.0",
+          "SzkolenieTechniczne3.UserIdentity.Storage": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SzkolenieTechniczne3.UserIdentity.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SzkolenieTechniczne3.UserIdentity.CrossCutting.dll": {}
+        }
+      },
       "SzkolenieTechniczne3.UserIdentity.Storage/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6420,6 +6434,11 @@
       "path": "../SzkolenieTechniczne3.Common.Storage/SzkolenieTechniczne3.Common.Storage.csproj",
       "msbuildProject": "../SzkolenieTechniczne3.Common.Storage/SzkolenieTechniczne3.Common.Storage.csproj"
     },
+    "SzkolenieTechniczne3.UserIdentity.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../SzkolenieTechniczne3.UserIdentity.CrossCutting/SzkolenieTechniczne3.UserIdentity.CrossCutting.csproj",
+      "msbuildProject": "../SzkolenieTechniczne3.UserIdentity.CrossCutting/SzkolenieTechniczne3.UserIdentity.CrossCutting.csproj"
+    },
     "SzkolenieTechniczne3.UserIdentity.Storage/1.0.0": {
       "type": "project",
       "path": "../SzkolenieTechniczne3.UserIdentity.Storage/SzkolenieTechniczne3.UserIdentity.Storage.csproj",
@@ -6431,6 +6450,7 @@
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Swashbuckle.AspNetCore >= 5.6.3",
+      "SzkolenieTechniczne3.UserIdentity.CrossCutting >= 1.0.0",
       "SzkolenieTechniczne3.UserIdentity.Storage >= 1.0.0"
     ]
   },
@@ -6469,6 +6489,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "G:\\Projekty Visual\\SzkolenieTechniczne3.UserIdentity.CrossCutting\\SzkolenieTechniczne3.UserIdentity.CrossCutting.csproj": {
+              "projectPath": "G:\\Projekty Visual\\SzkolenieTechniczne3.UserIdentity.CrossCutting\\SzkolenieTechniczne3.UserIdentity.CrossCutting.csproj"
+            },
             "G:\\Projekty Visual\\SzkolenieTechniczne3.UserIdentity.Storage\\SzkolenieTechniczne3.UserIdentity.Storage.csproj": {
               "projectPath": "G:\\Projekty Visual\\SzkolenieTechniczne3.UserIdentity.Storage\\SzkolenieTechniczne3.UserIdentity.Storage.csproj"
             }

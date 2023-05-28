@@ -10,3 +10,10 @@ G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\obj\Debug\net5
 G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.UserIdentity.CrossCutting.dll
 G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\obj\Debug\net5.0\ref\SzkolenieTechniczne3.UserIdentity.CrossCutting.dll
 G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.UserIdentity.CrossCutting.pdb
+G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.dll
+G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.Common.Storage.dll
+G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.UserIdentity.Storage.dll
+G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.Common.CrossCutting.pdb
+G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.UserIdentity.Storage.pdb
+G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\bin\Debug\net5.0\SzkolenieTechniczne3.Common.Storage.pdb
+G:\Projekty Visual\SzkolenieTechniczne3.UserIdentity.CrossCutting\obj\Debug\net5.0\SzkolenieTechniczne3.UserIdentity.CrossCutting.csproj.CopyComplete

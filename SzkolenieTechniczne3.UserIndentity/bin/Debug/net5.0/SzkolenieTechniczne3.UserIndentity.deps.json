@@ -36,6 +36,7 @@
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.Design": "5.0.17",
           "Swashbuckle.AspNetCore": "5.6.3",
+          "SzkolenieTechniczne3.UserIdentity.CrossCutting": "1.0.0",
           "SzkolenieTechniczne3.UserIdentity.Storage": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -1475,6 +1476,18 @@
         },
         "compile": {
           "SzkolenieTechniczne3.Common.Storage.dll": {}
+        }
+      },
+      "SzkolenieTechniczne3.UserIdentity.CrossCutting/1.0.0": {
+        "dependencies": {
+          "SzkolenieTechniczne3.Common.CrossCutting": "1.0.0",
+          "SzkolenieTechniczne3.UserIdentity.Storage": "1.0.0"
+        },
+        "runtime": {
+          "SzkolenieTechniczne3.UserIdentity.CrossCutting.dll": {}
+        },
+        "compile": {
+          "SzkolenieTechniczne3.UserIdentity.CrossCutting.dll": {}
         }
       },
       "SzkolenieTechniczne3.UserIdentity.Storage/1.0.0": {
@@ -3955,6 +3968,11 @@
       "sha512": ""
     },
     "SzkolenieTechniczne3.Common.Storage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SzkolenieTechniczne3.UserIdentity.CrossCutting/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

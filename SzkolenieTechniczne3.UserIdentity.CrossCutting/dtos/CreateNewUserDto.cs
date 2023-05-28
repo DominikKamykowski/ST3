@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SzkolenieTechniczne3.UserIdentity.CrossCutting.dtos
 {
-    class CreateNewUserDto :UpdateUserDto
+    public class CreateNewUserDto :UpdateUserDto
     {
         public override IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {

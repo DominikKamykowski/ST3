@@ -24,5 +24,6 @@ namespace SzkolenieTechniczne3.UserIdentity.Storage.Entities
          [MaxLength(300)]
         public string Description { get; set; } = null!;
         public ICollection<User> Users { get; set; } = new HashSet<User>();
+        public IEnumerable<object> User { get; set; }
     }
 }

@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SzkolenieTechniczne3.Common.CrossCutting\SzkolenieTechniczne3.Common.CrossCutting.csproj" />
+    <ProjectReference Include="..\SzkolenieTechniczne3.UserIdentity.Storage\SzkolenieTechniczne3.UserIdentity.Storage.csproj" />
+  </ItemGroup>
+
 </Project>

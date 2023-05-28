@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SzkolenieTechniczne3.Common.Storage.Interfaces;
 using SzkolenieTechniczne3.UserIdentity.CrossCutting.dtos;
 using SzkolenieTechniczne3.UserIdentity.CrossCutting.Mappings;
 using SzkolenieTechniczne3.UserIdentity.CrossCutting.Services.Interfaces;
@@ -79,18 +80,39 @@ namespace SzkolenieTechniczne3.UserIdentity.CrossCutting.Services
             }
             return entity;
         }
+
         public async Task Delete(Guid id)
         {
-            throw new NotImplementedException();
+            var entity = await _dbContext.Set<Role>().SingleOrDefaultAsync(e => e.Id!.Equals(id));
+                
+            if(entity == null)
+            {
+                throw new Common.CrossCutting.Exceptions.ApiHttpException(StatusCodes.Status404NotFound);
+            }
+
+            if(entity is ISoftDeletable softDeletableEntity)
+            {
+                softDeletableEntity.IsDeleted = true;
+
+                _dbContext.Entry(softDeletableEntity).State = EntityState.Modified;
+            }
+            else
+            {
+                _dbContext.Set<Role>().Remove(entity);
+            }
+
+            await _dbContext.SaveChangesAsync();
+
+
         }
-
-        
-
-        
 
         public Task<RoleDto> Update(RoleDto dto)
         {
             throw new NotImplementedException();
         }
+
+        
+
+
     }
 }
